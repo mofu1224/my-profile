@@ -1,5 +1,82 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGvYOenNAU/lWGd41twbFivsxNTH3Dmnw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mofu | Portfolio</title>
+    <meta name="description" content="mofuの自己紹介サイトです。SNSリンクやゲームサーバーの情報を掲載しています。">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@500;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">mofu</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="reveal">
+            <h1>mofu</h1>
+            <p class="tagline">Gamer / Content Creator</p>
+            <p class="email"><i class="far fa-envelope"></i> [redacted]</p>
+        </section>
+
+        <section id="links" class="reveal">
+            <h2>SNS</h2>
+            <div class="social-grid">
+                <a href="https://www.youtube.com/@mofu_mofu1224" target="_blank" class="social-card youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                    <small>@mofu_mofu1224</small>
+                </a>
+                <a href="https://www.tiktok.com/@mofu19141224" target="_blank" class="social-card tiktok">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                    <small>@mofu19141224</small>
+                </a>
+                <a href="https://x.com/mofu19141224" target="_blank" class="social-card x-twitter">
+                    <i class="fab fa-x-twitter"></i>
+                    <span>X (Twitter)</span>
+                    <small>@mofu19141224</small>
+                </a>
+            </div>
+        </section>
+
+        <section id="gaming" class="reveal">
+            <h2>Game Server</h2>
+            <div class="discord-card">
+                <div class="discord-info">
+                    <i class="fab fa-discord"></i>
+                    <div>
+                        <h3>Discord Server</h3>
+                        <p>ゲームサーバーへの参加はこちらから</p>
+                    </div>
+                </div>
+                <a href="https://discord.com/invite/NCppdXEtKZ" target="_blank" class="btn-primary">Join Server</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 mofu. All Rights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
