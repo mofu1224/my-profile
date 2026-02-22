@@ -211,6 +211,23 @@ h2::after {
     color: #ffffff;
 }
 
+.discord-id:hover {
+    border-color: #5865F2;
+    box-shadow: 0 10px 30px rgba(88, 101, 242, 0.2);
+}
+
+.discord-id:hover i {
+    color: #5865F2;
+}
+
+.github:hover i {
+    color: #ffffff;
+}
+
+.steam:hover i {
+    color: #1b2838;
+}
+
 /* Gaming Section */
 .discord-card {
     background: var(--card-bg);
