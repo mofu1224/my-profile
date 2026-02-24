@@ -199,13 +199,6 @@ h2::after {
     box-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
 }
 
-.youtube:hover i {
-    color: #ff0000;
-}
-
-.tiktok:hover i {
-    color: #00f2ea;
-}
 
 .x-twitter:hover i {
     color: #ffffff;
@@ -224,9 +217,6 @@ h2::after {
     color: #ffffff;
 }
 
-.steam:hover i {
-    color: #1b2838;
-}
 
 /* Gaming Section */
 .discord-card {
