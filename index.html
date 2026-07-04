@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mofu | Portfolio</title>
-    <meta name="description" content="mofuの自己紹介サイトです。SNSリンクやゲームサーバーの情報を掲載しています。">
+    <meta name="description" content="mofuの自己紹介サイトです。SNSリンクや連絡先を掲載しています。">
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,57 +17,55 @@
 </head>
 
 <body>
-    <div class="background-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
-
     <header>
         <nav>
             <div class="logo">mofu</div>
+            <a class="nav-contact" href="mailto:[redacted]" aria-label="メールを送る">
+                <i class="far fa-envelope"></i>
+            </a>
         </nav>
     </header>
 
     <main>
         <section id="hero" class="reveal">
-            <h1>mofu</h1>
-            <p class="tagline">Gamer / Content Creator</p>
-            <p class="email"><i class="far fa-envelope"></i> [redacted]</p>
+            <div class="hero-copy">
+                <p class="profile-label">Gamer / Content Creator</p>
+                <h1>mofu</h1>
+                <p class="tagline">SNSと連絡先をまとめたプロフィールページです。</p>
+            </div>
+            <a class="email" href="mailto:[redacted]">
+                <i class="far fa-envelope"></i>
+                <span>[redacted]</span>
+            </a>
         </section>
 
         <section id="links" class="reveal">
-            <h2>SNS</h2>
-            <div class="social-grid">
-                <a href="https://x.com/mofu19141224" target="_blank" class="social-card x-twitter">
-                    <i class="fab fa-x-twitter"></i>
-                    <span>X (Twitter)</span>
-                    <small>@mofu19141224</small>
-                </a>
-                <a href="https://discord.gg/NeBMB6bZHs" target="_blank" class="social-card discord-id">
-                    <i class="fab fa-discord"></i>
-                    <span>Discord</span>
-                    <small>mofu1224</small>
-                </a>
-                <a href="https://github.com/mofu1224" target="_blank" class="social-card github">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                    <small>@mofu1224</small>
-                </a>
+            <div class="section-heading">
+                <h2>SNS</h2>
+                <p>Follow and contact</p>
             </div>
-        </section>
-
-        <section id="gaming" class="reveal">
-            <h2>Game Server</h2>
-            <div class="discord-card">
-                <div class="discord-info">
-                    <i class="fab fa-discord"></i>
-                    <div>
-                        <h3>Discord Server</h3>
-                        <p>ゲームサーバーへの参加はこちらから</p>
-                    </div>
-                </div>
-                <a href="https://discord.com/invite/NCppdXEtKZ" target="_blank" class="btn-primary">Join Server</a>
+            <div class="social-grid">
+                <a href="https://x.com/mofu19141224" target="_blank" rel="noopener noreferrer" class="social-card x-twitter">
+                    <i class="fab fa-x-twitter"></i>
+                    <span>
+                        <strong>X (Twitter)</strong>
+                        <small>@mofu19141224</small>
+                    </span>
+                </a>
+                <a href="https://mofu1224.booth.pm/" target="_blank" rel="noopener noreferrer" class="social-card booth">
+                    <i class="fas fa-store"></i>
+                    <span>
+                        <strong>BOOTH</strong>
+                        <small>mofu1224.booth.pm</small>
+                    </span>
+                </a>
+                <a href="https://github.com/mofu1224" target="_blank" rel="noopener noreferrer" class="social-card github">
+                    <i class="fab fa-github"></i>
+                    <span>
+                        <strong>GitHub</strong>
+                        <small>@mofu1224</small>
+                    </span>
+                </a>
             </div>
         </section>
     </main>
