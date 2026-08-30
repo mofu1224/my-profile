@@ -1,17 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const observerOptions = {
-        threshold: 0.1
-    };
+document.documentElement.classList.add('js');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+document.addEventListener('DOMContentLoaded', () => {
+    const revealItems = document.querySelectorAll('.reveal');
+
+    if (!('IntersectionObserver' in window)) {
+        revealItems.forEach((item) => item.classList.add('active'));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+                currentObserver.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.12 });
 
-    document.querySelectorAll('.reveal').forEach(el => {
-        observer.observe(el);
-    });
+    revealItems.forEach((item) => observer.observe(item));
 });

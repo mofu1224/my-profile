@@ -4,75 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mofu | Portfolio</title>
-    <meta name="description" content="mofuの自己紹介サイトです。SNSリンクや連絡先を掲載しています。">
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
+    <meta name="theme-color" content="#fbf9ff">
+    <meta name="description" content="mofuのプロフィール。">
+    <title>mofu</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%237659c8'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial' font-size='36' font-weight='700' fill='white'%3Em%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@500;800&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">mofu</div>
-            <a class="nav-contact" href="mailto:[redacted]" aria-label="メールを送る">
-                <i class="far fa-envelope"></i>
+    <a class="skip-link" href="#main-content">本文へ移動</a>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="メインナビゲーション">
+            <a class="logo" href="#hero" aria-label="mofuのホームへ">
+                <span class="logo-mark" aria-hidden="true">✦</span>
+                <span>mofu</span>
             </a>
         </nav>
     </header>
 
-    <main>
-        <section id="hero" class="reveal">
-            <div class="hero-copy">
-                <p class="profile-label">Gamer / Content Creator</p>
-                <h1>mofu</h1>
-                <p class="tagline">SNSと連絡先をまとめたプロフィールページです。</p>
-            </div>
-            <a class="email" href="mailto:[redacted]">
-                <i class="far fa-envelope"></i>
-                <span>[redacted]</span>
-            </a>
+    <main id="main-content">
+        <section id="hero" class="hero reveal" aria-labelledby="hero-title">
+            <p class="eyebrow">Gamer / Content Creator</p>
+            <h1 id="hero-title">mofu<span class="hero-dot" aria-hidden="true">.</span></h1>
         </section>
 
-        <section id="links" class="reveal">
-            <div class="section-heading">
-                <h2>SNS</h2>
-                <p>Follow and contact</p>
-            </div>
-            <div class="social-grid">
-                <a href="https://x.com/mofu19141224" target="_blank" rel="noopener noreferrer" class="social-card x-twitter">
-                    <i class="fab fa-x-twitter"></i>
-                    <span>
+        <section id="links" class="links-section reveal" aria-labelledby="links-title">
+            <h2 id="links-title">SNS</h2>
+            <div class="social-list" role="list">
+                <a class="social-link" href="https://x.com/mofu19141224" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Xでmofuを見る">
+                    <span class="social-icon" aria-hidden="true"><i class="fab fa-x-twitter"></i></span>
+                    <span class="social-copy">
                         <strong>X (Twitter)</strong>
                         <small>@mofu19141224</small>
                     </span>
+                    <i class="fas fa-arrow-up-right-from-square social-arrow" aria-hidden="true"></i>
                 </a>
-                <a href="https://mofu1224.booth.pm/" target="_blank" rel="noopener noreferrer" class="social-card booth">
-                    <i class="fas fa-store"></i>
-                    <span>
-                        <strong>BOOTH</strong>
-                        <small>mofu1224.booth.pm</small>
-                    </span>
-                </a>
-                <a href="https://github.com/mofu1224" target="_blank" rel="noopener noreferrer" class="social-card github">
-                    <i class="fab fa-github"></i>
-                    <span>
+                <a class="social-link" href="https://github.com/mofu1224" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="GitHubでmofuを見る">
+                    <span class="social-icon" aria-hidden="true"><i class="fab fa-github"></i></span>
+                    <span class="social-copy">
                         <strong>GitHub</strong>
                         <small>@mofu1224</small>
                     </span>
+                    <i class="fas fa-arrow-up-right-from-square social-arrow" aria-hidden="true"></i>
                 </a>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 mofu. All Rights Reserved.</p>
-    </footer>
 
     <script src="main.js"></script>
 </body>
