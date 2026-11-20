@@ -1,0 +1,12 @@
+# プロフィール作業用の認証情報・通信記録
+.env
+.env.*
+!.env.example
+.git-credentials
+.netrc
+id_rsa
+id_ed25519
+credentials.json
+cookies.txt
+cookies.json
+*.har
